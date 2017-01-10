@@ -23,6 +23,23 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 
 </head>
 
@@ -103,6 +120,52 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Poll Aggregator Examples</h1>
+                    <p>
+                        Let's compare four well-known poll aggregators. 
+                        The first two, Huffington Post's Pollster and Real Clear Politics, only use the numbers from various polls. 
+                        The second two, 538 and NYT's Upshot make predictions based on various variables.
+                    </p>
+                    <table>
+                          <tr>
+                            <th>Pure Aggregators</th>
+                            <th>Predictors</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              Huffington Post's Pollster:
+                              <ul>
+                                <li>Concentrates only on polling data</li>
+                                <li>uses "smoothing" methods which approximate a function that looks at important parts of data</li>
+                              </ul>
+                            </td>
+                            <td>
+                              538
+                              <ul>
+                                <li>collection: collects broad array of national and state polls that are weighted based on 538's pollster rankings, sample sizes, data conducted, then averaged in each state</li>
+                                <li>adjusting: adjusts based on historical data to account for: 3rd party candidates, biased polling, national/state polling trends</li>
+                                <li>combining: combines polls with demographic and economic data</li>
+                                <li>simulating: accounts for uncertainty before simulating thousands of times</li>
+                              </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Real Clear Politics
+                              <ul>
+                                <li>takes simple average of polls of various polls</li>
+                                <li>doesn't use partisan polls</li>
+                              </ul>
+                            </td>
+                            <td>
+                              NYT's Upshot
+                              <ul>
+                                <li>takes weighted average of state polls</li>
+                                <li>gives more recently conducted polls and polls with larger sample sizes greater weight</li>
+                                <li>relies on past election data more than other variables such as demographics and region</li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>
                 </div>
             </div>
         </div>
