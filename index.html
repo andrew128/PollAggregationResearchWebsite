@@ -94,16 +94,19 @@
                 <div class="col-lg-12">
                     <h1>Poll Aggregation</h1>
                     <p>
+                        <strong>Introduction<\strong>
                         Poll aggregation can be thought of as an extension to polling. 
                         Poll aggregators combine multiple polls in a certain way to get a better estimate than a single poll can do. 
                         It's like comparing a single data point to results drawn from multiple data points, such as an average. 
                         <br /><br />
+                        <strong>Two Categories of Poll Aggregators<\strong>
                         There are two main types of poll aggregators. 
                         The first type are those that look purely at the numbers given from polls with "relatively little additional processing" (PEC). 
                         The second type are aggregators that use the data from polls as well as a variety of predicative variables, such as the state of the economy. 
                         For example, if a certain demographic has been known to vote for a certain party after certain shifts in the economy, some of these aggregators will account for that. 
                         We will refer to aggregators dealing only with polls as "pure aggregators" and  predicative aggregators as "predictors". 
                         <br /><br />
+                        <strong>Goal:</strong>
                         The goal of my project is to determine whether predictors fare better than pure aggregators in the context of the 2016 Presidential Election and why. 
                         I will then try to see if any of the results/explanations can be generalized (senate races, sports competitions, etc.). 
                         I chose to cover the 2016 Presidential Election because it was well covered by the poll aggregators. 
@@ -200,6 +203,8 @@
                         <br/>
                         When comparing 538 (the best predictor) to Huffington Post's Pollster (the best pure aggregator), it's interesting to note that both predicted the vote share in the same direction in every single state although by slightly different margins. 
                         This could be because they might have used many of the same polls in their analysis, or they both could've made the same systematic error, such as underestimating the silent majority. 
+                        <br/><br/>
+                       
                     </p>
                 </div>
             </div>
@@ -211,7 +216,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Summary and Explanation of Results</h1>
+                    <h1>Project Summary and Explanation of Results</h1>
                     <p>
                         Because poll aggregating relies on polls, aggregators have all the problems that polls have in addition to problems created during aggregation. 
                         One type of problem comes from systematic errors, which are problems in the polling methodology. 
@@ -220,18 +225,18 @@
                         <br />
                         From the results of the 2016 Presidential Election electoral college and the four aggregators covered, we see that predictors fared better than pure aggregators. 
                         We can not assume that this will be true in any sort of competition where polling is done because there is not enough data used to cover those areas. 
-                        However, we can look at some explanations for why some aggregators did better than others. 
+                        However, we can look at some comparisons to find reasons why some aggregators did better than others. 
                         <br />
-                        Because poll aggregating relies on polls, aggregators have all the problems that polls have in addition to problems created during aggregation. One type of problem comes from systematic errors, which are problems in the polling methodology. An example of a systematic error is the voter turnout of a poll's sample. The poll might have sampled a part of the population that might not actually vote in an election. 
-                        <br />
-From the results of the 2016 Presidential Election electoral college and the four aggregators covered, we see that predictors fared better than pure aggregators. We can not assume that this will be true in any sort of competition where polling is done because there is not enough data used to cover those areas. However, we can look at some explanations for why some aggregators did better than others.
-                        <br />
+                         <strong>
+                        Aggregator Comparisons:
+                        </strong>
                         Let's first compare the two pure aggregators, Huffington Post's Pollster and Real Clear Politics. Although Huffington Post doesn't give a detailed explanation of their methodology, they do some sort of statistical analysis that is more sophisticated than the simple averaging that Real Clear Politics does.
-                        <br />
+                        <br/>
                         Now let's compare the two predictors, 538 and the NYT's Upshot. Like Real Clear Politics, the NYT's Upshot takes an average of the polls it uses. This can be seen as a feature because, as more polls are taken into account over an election cycle, the average is less likely to change after recent polls. However, this means the Upshot will also be slow to predict developing trends. 
-                        <br />
-                        538 takes into account many different factors such as 3rd party candidates, national and state polling trends, and demographic and regional information. The result is that 538 changes much more often the the Upshot because it is constantly looking for new trends. 
-                        <br />
+538 takes into account many different factors such as 3rd party candidates, national and state polling trends, and demographic and regional information. The result is that 538 changes much more often than the Upshot because it is constantly looking for new trends. 
+                        <br/>
+                        Now let's compare 538, the best predictor, and Huffington Post's Pollster, the best pure aggregator. Huffington Post's smoothing methodology is "not optimal for revealing sudden shifts", such as the effect of a debate (PEC). Beside that, Huffington Post does not reveal much about its methodology aside from a set of strict criteria for polls that it includes. 538 is similar to Huffington Post in standards of polls used. However, as 538 is a predictor, it also brings up many other predicative indicators that Huffington Post's purely mathematical models can't see. One example factor is demographics, and how 538 uses past data to predict how different demographics will vote. Accounting for these has set 538 ahead by a solid margin.  
+                        
                     </p>
                 </div>
             </div>
@@ -251,6 +256,7 @@ From the results of the 2016 Presidential Election electoral college and the fou
                         <li><a href="http://election.princeton.edu/2012/11/04/comparisons-among-aggregators-and-modelers/">Princeton Election Consortium Comparisons</a></li>
                         <li><a href="http://www.dailykos.com/story/2012/11/8/1158891/-Which-Poll-Aggregator-Performed-Best-The-Answer-538">Analyzing 2012 Presidential Election</a></li>
                         <li><a href"https://github.com/BlackrockDigital/startbootstrap/blob/master/LICENSE">Bootstrap License</a></li>
+                        <li><a href="http://www.vox.com/policy-and-politics/2016/11/4/13501120/vote-polling-places-election-2016 ">Vox (Southern States have closed down at least 868 polling places for the 2016 election)</a></li>
                     </ul>
                 </div>
             </div>
